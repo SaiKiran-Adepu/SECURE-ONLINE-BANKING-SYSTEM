@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>SKA BANKING..</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="datetime.js"></script>
+</head>
+<body>
+<div id="top_links">
+<div id="header">
+	<h1>SKA - BANKING<span class="style1"></span></h1>
+    <h2>Express Service</h2>	
+
+</div>
+<center>
+<div id="navigation">
+    <ul>
+    <li><a href="mgrl">MGR LOGIN</a></li>
+    <li><a href="chl" target="_parent">CASHIER LOGIN</a></li>
+    <li><a href="usel.jsp">A/C USR LOGIN</a></li>
+	<li><a href="create1.jsp">NEW AC REQ?</a></li>
+	<li>
+	
+<span id="lblTime"></span><!-- here directly from external js file for the time and date -->
+	</li>
+    
+   </ul>
+</div></center>
+
+
+
+<table style="width:897px; background:#FFFFFF; margin:0 auto;"><tr align="justify">
+	<td width="299" valign="top" style="border-right:#666666 1px dotted;">
+    	<div id="services"><h1>BANK ADMINS</h1><br>
+		    <ul>
+        	<li><font color="blue">SAI</font></li>
+            <li><font color="#0066cc">SAI KIRAN</font></li>
+            <li><font color="  #269900">RAMESH</font></li>
+			            </ul>
+			
+       </div>
+	</td>
+    
+    <td width="299" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>Welcome</h1><br>
+    	    <center><img src="images/bank.webp" alt="business" width="196" height="106"></center><br>
+		    <p>Each people plan their Money To Deposte There Money in the bak here it is a Right place to deposte.</p>
+	    	
+	    </div>      
+    </td>
+    
+    <td width="299" valign="top">
+   	  <div id="news"><h1>News &amp; Events</h1><br>
+      	<div class="img"><img src="images/dollar.webp" height="120" width="110" alt="Business"></div>
+        <h2>Nov. 17, 202.</h2>
+        <p>Get your dream To deposite In SKA Bank at this website.</p><br>
+                <h2>Nov. 17, 2022.</h2>
+        <p>Get your dream Comes True At SKA Bank.</p>
+      
+      </div>
+	 </td>
+	
+        	
+     </td>
+</tr></table>
+<br>
+<br>
+<center><img src="images/arch3.jpg"  alt="business"  width="196" height="106"></center><br>
+<div id="footer_top">
+<script LANGUAGE="JavaScript">
+         
+    function login(form)
+	{
+		var name = document.getElementById("name").value;
+		var feed = document.getElementById("feed").value;
+		if(name =='')
+		{
+			alert("please enter Your Name");
+			return false;
+		}
+		else if(feed=='')
+		{
+        	alert("Enter Your FeedBack");
+			return false;
+		}
+		else
+		{
+		  //alert("please fill corect details");
+		  //window.location.href =ul;
+		 //const myWindow.document.open(+<form method = post action = "http://192.168.43.42:8181/test/Jdbin.jsp"); 
+		  //document.writeln("<form method = post action = http://192.168.43.42:8181/uservaljsp/Jdbin.jsp ">
+		}
+	}
+		function clearFunc()
+	{
+		document.getElementById("email").value="";
+		document.getElementById("pwd1").value="";
+	}	
+		</script>
+    
+    
+	<center>
+        <form method = "post" onSubmit="return login(this)" action = "feedback.jsp">
+            <fieldset style="width:23%; background-color:lightblue">
+                <h3><center>FeedBack Page</center></h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td> <input type = "text" name = "name" id="name" Placeholder="NAME"></td>
+                    </tr>
+                    <tr>
+                        <td>FeedBack:</td>
+                        <td><textarea name = "feed" id="feed"  Placeholder="YOUR FEEDBACK HERE"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type = "Submit" value="Submit FeedBack" name = "s1" onClick ="login(this.form)">
+						<input type="reset" value="Reset" onclick="clearFunc()">
+						
+						</td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+		<br>
+		<br>
+          <table border="4px" bordercolor="green">
+	  <tr>
+	  <td>
+        <a href="feedbp.jsp"><font color="blue">Click Here For USERS FEEDBACK</font></a>	
+     </td>
+	 </tr>
+	 </table>
+		
+           </center>
+	
+</div>
+  
+  
+  <div id="footer_copyright" >
+ 
+    	    <p>Each people plan their Money To deposite and to be a happy Life SKA Bank will Provide The Loans Include Home,Education,Bussiness,Personal and Gold.</p>
+	  
+  Copyright © SKA BANKING DEVELOPMENTS ALL RIGHTS RECEIVED 2023<br>
+  THIS SITE IS DEVELOPED BY SKA DEVELOPMENTS ALL RIGHTS RECEIVED 2023
+</div>
+
+<script type="text/javascript">
+document.onload = ctck();
+</script>
+</div>
+</body>
+</html>

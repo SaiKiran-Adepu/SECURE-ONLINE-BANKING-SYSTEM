@@ -1,0 +1,135 @@
+1) db table for manager/cashier login,it holdes Accounts holder Db which inserted from SKABANK.html and skaadin.jsp file
+
+ADNUM	ADNAME	ADPASS
+1      saikiran saikiran1    
+2	sai	sai1
+ querry of above table
+create table skaadm(adnum number(10),adname varchar2(10),adpass varchar2(10));
+
+
+
+2)A/C userp partial which has filled by new ac user and db visible and confirmed by cashier
+
+CREATE TABLE  "USERP" 
+   (	"CUID" NUMBER(8,0), 
+	"USERNAME" VARCHAR2(20) NOT NULL ENABLE, 
+	"PASS" VARCHAR2(20) NOT NULL ENABLE, 
+	"AMT" NUMBER(8,0), 
+	"TRM" VARCHAR2(8), 
+	"ADDR" VARCHAR2(16), 
+	"PHN" VARCHAR2(11), 
+	"GENDER" VARCHAR2(10), 
+	"DOB" VARCHAR2(30), 
+	"DOO" VARCHAR2(4000)
+       CHECK (amt>0) ENABLE
+   )
+/
+
+3)A/c real is userreal holder which is holde by mgr and cashier
+
+CREATE TABLE  "USERREAL" 
+   (	"ACID" NUMBER NOT NULL ENABLE, 
+	"USERNAME" VARCHAR2(20) NOT NULL ENABLE, 
+	"PASS" VARCHAR2(20) NOT NULL ENABLE, 
+	"AMT" NUMBER NOT NULL ENABLE, 
+	"TRM" VARCHAR2(8), 
+	"ADDRESS" VARCHAR2(10), 
+	"PHONE" VARCHAR2(10), 
+	"GENDER" VARCHAR2(10), 
+	"DOB" VARCHAR2(4000), 
+	"DOO" VARCHAR2(4000), 
+	 CHECK (amt>0) ENABLE
+   )
+/
+
+
+
+4)Feedback for users Will visible on index page and entered from index page and user page
+and delete visble controls at mg/chsr
+
+Create table feedback(name varchar2(20),feedb varchar2(300));
+
+5)Mreq for request money visible requested money in user log on
+create table mreq(facid varchar2(10),acid number(10),mreq varchar2(20));
+
+6)skatrns table for hold the transaction 
+CREATE TABLE  "SKATRNS" 
+   (	"TRNO" NUMBER, 
+	"ACID" NUMBER, 
+	"FUND" NUMBER(10,0), 
+	"TACID" NUMBER(10,0), 
+	"TRM" VARCHAR2(50), 
+	"DOT" VARCHAR2(4000), 
+	"DOT1" VARCHAR2(50) NOT NULL ENABLE, 
+	"TRM2" VARCHAR2(50)
+   )
+/
+
+
+
+sequences used for auto increment the acid and cuid on userp and userreal tables
+
+create sequence cuid_seq1 (this sequence for userp table)
+start with 100
+increment by 1
+nocache
+nocycle;
+
+
+
+create trigger t123_cuid
+ before insert on userp
+ for each row
+ begin
+ select cuid_seq1.nextval
+ into:new.cuid
+ from dual;
+ end;
+ /
+
+create sequence acid_seq2   (this sequence for userreal table)
+start with 100
+increment by 1
+nocache
+nocycle;
+
+create trigger t124_acid
+ before insert on userreal
+ for each row
+ begin
+ select acid_seq2.nextval
+ into:new.acid
+ from dual;
+ end;
+ /
+
+
+Sequence for trasaction history on skatrns table
+ CREATE SEQUENCE   "TRNO_SEQT"  MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 100 NOCACHE  NOORDER  NOCYCLE
+/
+
+trigger for skatrns table
+
+CREATE OR REPLACE TRIGGER  "TT123_TRNO" 
+ before insert on skatrns
+ for each row
+ begin
+ select trno_seqt.nextval
+ into:new.trno
+ from dual;
+ end;
+/
+ALTER TRIGGER  "TT123_TRNO" ENABLE
+/
+
+
+
+
+insert into staff( staff_name ) values ('Justin');
+
+in ui dont remove acid and cuid colums if they enter any number that will saved in 1,2,3 order only
+
+
+
+
+

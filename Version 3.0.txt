@@ -1,0 +1,25 @@
+SKA BANK version 2.0 
+
+There is lot of changes in the source code and project 
+
+here mainly added the sessions to restrict the direct user access of URL 
+
+and maintained the high code complexity for easy understanding.
+
+and here restricted in UI that user/admin trying to transfering deposite withdraw fund to a AC not in the DB then here directly restricted 
+
+ex if AC 100 not existed in BANK then trasaction denies....
+
+for this we used the SQL query  SELECT acid FROM userreal WHERE acid=(SELECT max(acid) FROM userreal);
+
+In this version used the session file sessionval for the Admins and
+
+Sessionvalu session file for the Users of Bank
+
+in this version used the bascid is a file that holds the min and max acids in the bank that restricts the user.admin while manking any trasactions
+
+ALL Codes Writen in the simple and easy understanding puropse........
+
+Veresion 3.0
+
+In this version mainly foucused on the java script as a main file for index and user admin ui time running and date

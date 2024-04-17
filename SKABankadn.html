@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Welcome To SKA BANKING </title>
+		<script LANGUAGE="JavaScript">
+              
+    function login(form)
+	{
+	    var mgrno = document.getElementById("mgrid").value;
+		var acid = document.getElementById("name").value;
+		var pass = document.getElementById("pass").value;
+		if(mgrno=='')
+		{
+			alert("please enter mgr Id");
+			return false;
+		}
+		else if(acid=='')
+		{
+        	alert("enter mgr name");
+			return false;
+		}
+		else if(pass=='')
+		{
+		  alert("please mgr pass");
+		  return false;
+		  //window.location.href =ul;
+		 
+		}
+	}
+		function clearFunc()
+	{
+		document.getElementById("accid").value="";
+		document.getElementById("name").value="";
+		document.getElementById("pass").value="";
+	}	
+		</script>
+    </head>
+    <body>
+	<center>
+        <form method = "post" onSubmit="return login(this)" action = "http://192.168.43.42:8181/bank/Skaadins.jsp">
+          // for non indexed html page must ude http://url only for when page not linked to main index page running on server here this SKABankadn.html file not linked any where in project index page 
+          //thats why we use total url to insert a value on db          
+
+		   <fieldset style="width:23%; background-color:lightblue">
+                <h3><center>Create Manager/Cashier</center></h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Mgr/Chsr Number:</td>
+                        <td> <input type = "text" name = "mgrid" id="mgrid" Placeholder="MGR/CHSR NUMBER"></td>
+                    </tr>
+					<tr>
+                        <td>Mgr/Chsr Name:</td>
+                        <td> <input type = "text" name = "name" id="name" Placeholder="MGR/CHSR NAME"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type = "password" name = "pass" id="pass" Placeholder="MGR/CHSR PASSWORD"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type = "submit" value="create MGR" name = "s1" onClick ="login(this.form)">
+						<input type="reset" value="Reset" onclick="clearFunc()">
+						</td>
+                    </tr>
+					
+					 <tr>
+                        <td></td>
+                        <td> <a href="jdmgrs.jsp"><input type = "button" value="Show all MGR with PASS"></a>
+						</td>
+                    </tr>
+                </table>
+
+		
+        
+		
+           </center>
+	</body>
+</html>
