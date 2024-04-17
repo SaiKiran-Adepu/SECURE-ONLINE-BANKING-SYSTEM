@@ -1,0 +1,75 @@
+<web-app>  
+ 
+  
+  	<servlet>
+        <description>
+        </description>
+        <display-name>mgrl</display-name>
+        <servlet-name>mgrl</servlet-name>
+        <jsp-file>/mgrlogin.jsp</jsp-file>
+    </servlet>
+	  <servlet-mapping>
+        <servlet-name>mgrl</servlet-name>
+        <url-pattern>/mgrl</url-pattern>
+    </servlet-mapping>
+		<servlet>
+        <description>
+        </description>
+        <display-name>jmgrd</display-name>
+        <servlet-name>jmgr</servlet-name>
+        <jsp-file>/jsmgr.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jmgr</servlet-name>
+        <url-pattern>/jmgr</url-pattern>
+    </servlet-mapping>
+	
+<servlet>
+        <description>
+        </description>
+        <display-name>SKA BANK HOME</display-name>
+        <servlet-name>SKB</servlet-name>
+        <jsp-file>/index.html</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SKB</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <description>
+        </description>
+        <display-name>chl</display-name>
+        <servlet-name>chl</servlet-name>
+        <jsp-file>/chrlogin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>chl</servlet-name>
+        <url-pattern>/chl</url-pattern>
+    </servlet-mapping>
+	
+<servlet>
+        <description>
+        </description>
+        <display-name>jchl</display-name>
+        <servlet-name>jchl</servlet-name>
+        <jsp-file>/jschr.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jchl</servlet-name>
+        <url-pattern>/jchl</url-pattern>
+    </servlet-mapping>
+   
+ 
+	
+
+	
+	
+   
+	
+  
+  
+  
+   
+</web-app> 
