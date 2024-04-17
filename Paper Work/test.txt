@@ -1,0 +1,227 @@
+select Sum(uno) from userr;
+select username,amount from userreal where accid= ?"
+
+
+String balnce = request.getParameter("amount");
+        
+        String name = request.getParameter("username");
+
+
+ <ul>
+    <li><a href="http://192.168.43.42:8181/bank/balance.jsp">TOTAL CASH</a></li>
+    <li><a href="http://192.168.43.42:8181/bank/Shwacc.jsp">ALL HOLDER</a></li>
+	 <li><a href="http://192.168.43.42:8181/bank/bals.html">BAL SRCH</a></li>
+    <li><a href="http://192.168.43.42:8181/bank/clacc.html">CLOSE A/C</a></li>
+    <li><a href="about.jsp">ABOUT US</a></li>
+
+
+
+
+
+
+
+
+
+
+
+  var usr = document.getElementById("username").value;
+	  	    var amt = document.getElementById("amt").value;
+		 var trm = document.getElementById("trm").value;
+		  var addr = document.getElementById("addr").value;
+		   var phn = document.getElementById("phn").value;
+	 if(cuid=="")
+	 {
+	 alert("enter cuid");
+	 return false;
+	 }
+	 else if(usr=="")
+	 {
+	 alert("enter Username");
+	 return false;
+	 }
+	 
+	 	 else if(amt=="")
+	 {
+	 alert("enter AMMOUNT>500");
+	 return false;
+	 }
+	 	 else if(trn=="")
+	 {
+	 alert("enter Transaction MOde");
+	 return false;
+	 }
+	 	 else if(addr=="")
+	 {
+	 alert("enter Address");
+	 return false;
+	 }
+	 	 else if(phn=="")
+	 {
+	 alert("enter Mobile Number");
+	 return false;
+	 }
+   /* ps1.setInt(1,id);
+        ps1.setString(2,user);
+		ps1.setString(3,pass);
+		ps1.setString(4,repass);
+		ps1.setInt(5,amount);
+		ps1.setString(6,trm);
+		ps1.setString(7,address);
+		ps1.setString(8,phone);
+		*/
+
+    </ul>
+
+
+
+
+
+
+<a href="http://192.168.43.42:8181/bank/create.html">NEW AC</a></td>
+    	<td><a href="http://192.168.43.42:8181/bank/balance.jsp">TOTAL CASH</a></td>
+    <td><a href="http://192.168.43.42:8181/bank/Shwacc.jsp">ALL HOLDER</a></td>
+	 <td><a href="http://192.168.43.42:8181/bank/bals.html">BAL ENQ</a></td>
+    <td><a href="http://192.168.43.42:8181/bank/deposite.html">DEPOSIT</a></td>
+    <td><a href="withdraw1.jsp">WITHDRAW</a></td>
+    <td><a href="transfer1.jsp">TRANSFER</a></td>
+    <td><a href="http://192.168.43.42:8181/bank/clacc.html">A/C CLOSE</a></td>
+    <td><a href="http://192.168.43.42:8181/bank/index.html"><IMG SRC="images/home1.gif"></img></a></td>
+    <td><a href="about.jsp">ABOUT US</a></td>
+
+
+
+
+select amt,username from userreal where acid = ? and pass=?"
+
+
+
+ <a href="http://192.168.43.42:8181/bank/bals1.jsp" target="_blank">Check From Bal Enq</a>
+					  
+for opens a link in new window
+
+<td><input type = "text" name = "amt" id="amt" value=500 readonly="readonly"></td>
+for un editable value in text box
+
+
+
+
+
+create sequence use_cuid_seq;
+
+create sequence userreal_acid_seq;
+
+
+create trigger trg_acid
+    before insert on userreal
+   for each row
+  begin
+     select acid_seq.nextval
+       into :new.acid
+       from dual;
+   end;
+    
+
+
+
+CREATE OR REPLACE TRIGGER  "TRG1_CUID" 
+    before insert on userp
+   for each row
+  begin
+     select cuid_seq.nextval
+       into :new.cuid
+       from dual;
+   end;
+/
+ALTER TRIGGER  "TRG1_CUID" ENABLE
+/
+
+
+
+
+
+
+
+
+ create table test(no number(10),name varchar2(10));
+
+
+ create sequence no_seq;
+
+ create trigger t1_no
+ before insert on test
+ for each row
+ begin
+ select no_seq.nextval
+ into:new.no
+ from dual;
+ end;
+ /
+
+insert into staff( staff_name ) values ('Justin');
+
+in ui dont remove acid and cuid colums if they enter any number that will saved in 1,2,3 order only
+
+
+create trigger t124_acid
+ before insert on userreal
+ for each row
+ begin
+ select acid_seq2.nextval
+ into:new.acid
+ from dual;
+ end;
+ /
+
+To hide a text box or the html tags use
+<p hidden>This paragraph should be hidden.</p>
+
+
+
+
+
+   int acid2=Integer.parseInt(request.getParameter("acid1"));		   
+		     ps3.setInt(1,acid2);
+			 int cnt22 = ps3.executeUpdate();
+           if(cnt22>0)
+		   {
+			   out.println("<center><font color=blue><h3>PAYMENT Successfull</h3></font></center>");
+		       //out.println("<center><img src=arch3.jpg width=600 height=250></img></center>");
+     		 // out.println("<center><img src=http://192.168.43.42:8181/uservaljsp/jsplog/lp/images/welcome.jpg width=600 height=250></img></center>");
+				out.println("<center><h2><font color=green> SKA BANKING</font></h2></center>");
+				out.println("<center><h2><font color=orange>This Site Is Developed By SKA Developments</font></h2></center>");
+		   }
+		   
+		   
+				else 
+				{
+					out.println("<center><font color=blue><h3>PAyment Not Successfull,Wrong Password</h3></font></center>");
+				}
+		   
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+<form>
+<textarea id="demo1">
+</textarea>
+</form>
+<script>
+
+   	var d = new Date(); 
+	var d1 = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate(); 
+ document.getElementById("demo1").innerHTML = d1;                 
+ //passing js elements to inside html form elements
+//document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html> 
