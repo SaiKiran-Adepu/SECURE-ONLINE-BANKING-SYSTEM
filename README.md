@@ -6,4 +6,4 @@ all the transactions done through bank account will trackable by bank admins and
 2. Bank Cashier can handle the withdrawal deposit and user related transaction enquiry details, Creating new account fund transfer etc
 3. Bank User can login to the application and check the bank balance and transfer the fund from user bank account to another user account with a Realtime transaction system and here I restricted the transaction when user don't have enough fund to transfer at the end of transaction user can re verify the bank transaction using as transaction history on the same user portal just like an UPI 
 4. Bank User register/Sign up for this I developed like an API that controls the Bank cashier with a new account register accept page 
-GitHub Link: https://github.com/SaiKiran-Adepu/SKA-ONLINE-BANKING-SYSTEM
+GitHub Link: https://github.com/SaiKiran-Adepu/SECURE-ONLINE-BANKING-SYSTEM
