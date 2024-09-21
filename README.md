@@ -1,4 +1,4 @@
-# SKA-ONLINE-BANKING-SYSTEM
+# SECURE-ONLINE-BANKING-SYSTEM
 The Application is based on Modern Banking how the day to day the transactions are done with bank admins called manager cashier and user, For this I used Technologies HTML JS CSS as a Frontend, JSP Java as backend code development and Oracle SQL as database In this project there are four Main modules
 The Online Banking System the application is based on the banking system with the Admin/Manager/Cashier and User modules the Admin can controll all the records and information and transaction's done using the bank and
 all the transactions done through bank account will trackable by bank admins and user in a transaction Enquiry
